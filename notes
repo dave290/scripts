@@ -1,0 +1,7 @@
+# create folder called /Scripts
+# put this into search path using     	export PATH=$PATH:/home/david/Scripts
+# verify that it is added to search	echo $PATH
+# write bash script and append .sh	hiya.sh
+# call this using                     	hiya.sh OR ./hiya.sh dave OR bash hiya.sh dave
+# make this executable using          	chmod u+x hiya.sh
+# from now on, call by			hiya.sh typeanamehere
