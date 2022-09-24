@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# put this into search path using     	export PATH=$PATH:/home/pi/Research/scripts
-# verify that it is added to search	echo $PATH
-# call this using                     	go.sh OR ./go.sh OR bash go.sh 
+# Put this into /home/pi/.local/bin
+# Call from home shell,   $ go.sh
 
 #user enters local date and time to set clock
 echo Enter the date and time.  For example
