@@ -1,7 +1,30 @@
-# create folder called /Scripts
-# put this into search path using     	export PATH=$PATH:/home/david/Scripts
-# verify that it is added to search	echo $PATH
-# write bash script and append .sh	hiya.sh
-# call this using                     	hiya.sh OR ./hiya.sh dave OR bash hiya.sh dave
-# make this executable using          	chmod u+x hiya.sh
-# from now on, call by			hiya.sh typeanamehere
+# How to call sh files that exist in the Scripts folder from the home shell
+
+$ cd
+$ export PATH=$PATH:/home/david/Scripts
+$ echo $PATH
+write bash script and append .sh	hiya.sh
+make this executable using          	chmod u+x hiya.sh
+call this using                     	hiya.sh OR ./hiya.sh dave OR bash hiya.sh dave
+from now on, call by			hiya.sh typeanamehere
+
+Also
+from the Scripts directory, call the program with $ ./test.sh
+to run this shell script from any directory, add the folder to the .bashrc file
+then, from home directory, enter $ source .bashrc
+should be able to call the script using $ test.sh
+
+Or
+Add the .sh file to the /.local/bin folder in the home directory
+This will keep the file in the path always, after every startup
+
+For example, on the gr-radio_astro OS:
+Copy the executable shell script, go.sh into the folder 
+/home/pi/.local/bin
+From now on, when I enter $ go.sh, it will start the data collection programs.
+
+#TODO
+#is there a way to make the python script read and write to working directory 
+#from which the shell script was called?
+#or, do I need to create a dedicated directory for using files?
+#or, have a list of directories to search?
